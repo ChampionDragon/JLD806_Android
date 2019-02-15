@@ -55,7 +55,6 @@ Gpio.SetGpioOutputLow("gpio_lcd_en");
 Function:  设置主板RTC硬件时钟.
 
 Parameter: set_value -> 时间参数的数组，数组长度为6.
-
 日期和时间 [0]:年, [1]:月，[2]:日，[3]:时，[4]:分，[5]:秒
 
 Return:    true -> 成功    false -> 失败。
@@ -74,52 +73,65 @@ Return:    成功-> 返回一个数组，数组长度为6.日期和时间 [0]:�
 
 
 
+### public synchronized boolean set_onoff_by_day(int[] set_value)
+Function:  设置指定日期定时开/关机日期时间
 
-//Function:  设置指定日期定时开/关机日期时间
-//Parameter: set_value -> 时间参数的数组，数组长度为10.
-//           开机日期和时间 [0]:年, [1]:月，[2]:日，[3]:时，[4]:分，
-//           关机日期和时间 [5]:年, [6]:月，[7]:日，[8]:时，[9]:分，
-//Return:    true -> 成功    false -> 失败。
-public synchronized boolean set_onoff_by_day(int[] set_value)
+Parameter: set_value -> 时间参数的数组，数组长度为10.
 
+开机日期和时间 [0]:年, [1]:月，[2]:日，[3]:时，[4]:分，
+关机日期和时间 [5]:年, [6]:月，[7]:日，[8]:时，[9]:分，
 
-
-//Function:  读取当前定时开关机设置
-//Parameter: 无
-//Return:    成功-> 返回一个数组，数组长度为10.
-//           开机日期和时间 [0]:年, [1]:月，[2]:日，[3]:时，[4]:分，
-//           关机日期和时间 [5]:年, [6]:月，[7]:日，[8]:时，[9]:分，
-//
-//           失败-> 返回一个数组，数组长度为1, 值为－1.
-public synchronized int[]  get_onoff_by_day()
+Return:    true -> 成功    false -> 失败。
 
 
 
+### public synchronized int[]  get_onoff_by_day()
+Function:  读取当前定时开关机设置
 
-//Function:  启动或停止指定日期的定时开关机设置。
-//Parameter: enalbe -> 1: 启动，  0: 停止
-//Return:    true -> 成功    false -> 失败。
-public synchronized  boolean  enable_onoff_by_day(int enable)
+Parameter: 无
 
+Return:    成功-> 返回一个数组，数组长度为10.
 
+开机日期和时间 [0]:年, [1]:月，[2]:日，[3]:时，[4]:分，
+关机日期和时间 [5]:年, [6]:月，[7]:日，[8]:时，[9]:分，
 
-//Function:  判断当前是否启动指定日期的定时开关机设置。
-//Parameter: 无
-//Return:    成功  1:已启动， 0:未启动
-//           失败 －1: 读取失败
-public  synchronized int check_onoff_by_day()
+失败-> 返回一个数组，数组长度为1, 值为－1.
 
 
-//Function:  系统立即关机。
-//Parameter:  无
-//Return:     true -> 成功    false -> 失败。
-public synchronized boolean shutdown_system()
 
 
-//Function:  系统立即重启
-//Parameter:  无
-//Return:     true -> 成功    false -> 失败。
-public synchronized boolean restart_system()
+### public synchronized  boolean  enable_onoff_by_day(int enable)
+Function:  启动或停止指定日期的定时开关机设置。
+
+Parameter: enalbe -> 1: 启动，  0: 停止
+
+Return:    true -> 成功    false -> 失败。
+
+
+
+### public  synchronized int check_onoff_by_day()
+Function:  判断当前是否启动指定日期的定时开关机设置。
+
+Parameter: 无
+
+Return:    成功  1:已启动， 0:未启动失败 －1: 读取失败
+
+
+### public synchronized boolean shutdown_system()
+Function:  系统立即关机。
+
+Parameter:  无
+
+Return:     true -> 成功    false -> 失败。
+
+
+### public synchronized boolean restart_system()
+Function:  系统立即重启
+
+Parameter:  无
+
+Return:     true -> 成功    false -> 失败。
+
 
 
 
