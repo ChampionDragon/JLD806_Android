@@ -53,9 +53,13 @@ Gpio.SetGpioOutputLow("gpio_lcd_en");
 ## 开关机控制
 ### public synchronized boolean set_mcu_time(int[] set_value)
 Function:  设置主板RTC硬件时钟.
+
 Parameter: set_value -> 时间参数的数组，数组长度为6.
+
 日期和时间 [0]:年, [1]:月，[2]:日，[3]:时，[4]:分，[5]:秒
+
 Return:    true -> 成功    false -> 失败。
+
 
 
 
