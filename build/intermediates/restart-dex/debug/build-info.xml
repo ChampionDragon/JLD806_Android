@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    api-level="19"
+    density="mdpi"
+    format="8"
+    plugin-version="2.2.0"
+    timestamp="28075982111339"
+    token="8872460709540947269"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="81" />
+    <task
+        name="instant-run-dex"
+        duration="9" />
+    <task
+        name="instant-run-transform"
+        duration="11" />
+    <task
+        name="verifier"
+        duration="1" />
+
+    <artifact
+        location="F:\Long\MyApplication\gaoDi\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
+
+    <build
+        timestamp="27182348918690"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="F:\Long\MyApplication\gaoDi\build\outputs\apk\gaoDi-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="27761693719147"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="F:\Long\MyApplication\gaoDi\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="F:\Long\MyApplication\gaoDi\build\intermediates\builds\debug\27761693719147\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="28075982111339"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="F:\Long\MyApplication\gaoDi\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>
