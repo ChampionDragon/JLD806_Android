@@ -62,15 +62,16 @@ Return:    true -> 成功    false -> 失败。
 
 
 
+### public synchronized int[] get_mcu_time()
+Function:  读取主板RTC硬件时钟.
 
-//Function:  读取主板RTC硬件时钟.
-//Parameter: 无
-//Return:    成功-> 返回一个数组，数组长度为6.
-//           日期和时间 [0]:年, [1]:月，[2]:日，[3]:时，[4]:分，[5]:秒，
-//
-//           失败-> 返回一个数组，数组长度为1, 值为－1.
-//
-public synchronized int[] get_mcu_time()
+Parameter: 无
+
+Return:    成功-> 返回一个数组，数组长度为6.日期和时间 [0]:年, [1]:月，[2]:日，[3]:时，[4]:分，[5]:秒，     
+
+失败-> 返回一个数组，数组长度为1, 值为－1.
+
+
 
 
 
